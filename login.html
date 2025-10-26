@@ -16,16 +16,15 @@
             const pass = document.getElementById('password').value;
             const message = document.getElementById('message');
       
-            // ✅ Change these to whatever credentials you want
-            const validUser = "admin";
-            const validPass = "1234";
+
+            const validUser = "student";
+            const validPass = "AUFRJPUS";
       
             if (user === validUser && pass === validPass) {
-              // Redirect or show success message
               message.style.color = "green";
               message.innerText = "Login successful!";
               setTimeout(() => {
-                window.location.href = "welcome.html"; // redirect page
+                window.location.href = "welcome.html"; 
               }, 1000);
             } else {
               message.style.color = "red";
